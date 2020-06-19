@@ -1,0 +1,424 @@
+.mod_profile {
+    height: 315px;
+    padding-top: 65px;
+    background: url(../assets/bg_profile.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+div {
+    display: block;
+}
+
+.mod_nav {
+    margin-bottom: -20px;
+    overflow: hidden;
+    border-bottom: 0 none;
+}
+
+.mod_nav {
+    position: relative;
+    zoom: 1;
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.mod_nav {
+    height: 56px;
+    line-height: 56px;
+}
+
+element.style {
+    display: block;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+th {
+    color: #000;
+    background-color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: poppin, Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+    font-family: Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif/9;
+}
+
+body ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body ::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: 0 0;
+}
+
+.js_sub {
+    height: 700px;
+}
+
+.js_sub {
+    height: 50px;
+    padding-top: 5px;
+    background-size: cover;
+    text-align: left;
+    color: #fff;
+    padding-left: 38px;
+}
+
+.mod_green {
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    color: #fff;
+}
+
+.mod_green {
+    border-radius: 2px;
+    font-size: 14px;
+    margin-right: 6px;
+    padding: 0px 23px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+button {
+    color: #000;
+    text-decoration: none;
+}
+
+user agent stylesheet button:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mod_son {
+    padding-left: 10px;
+}
+
+.mod_son {
+    position: left;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+.songlist_header {
+    padding-left: 20px;
+}
+
+.songlist_header {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .01);
+    color: #999;
+}
+
+.songlist_header {
+    position: relative;
+    padding-left: 46px;
+    padding-right: 95px;
+}
+
+.song_name {
+    width: 56%;
+}
+
+.song_name {
+    float: left;
+    width: 47.685185%;
+    position: relative;
+    white-space: normal;
+}
+
+.song_author {
+    width: 22%;
+}
+
+.song_author {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+}
+
+.song_album {
+    width: 22%;
+}
+
+.song_album {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+}
+
+.song_time {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    width: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.card {
+    padding-left: 20px;
+}
+
+.card {
+    clear: both;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    padding-left: 46px;
+    padding-right: 95px;
+}
+
+.sonlistname {
+    width: 56%;
+}
+
+.sonlistname {
+    float: left;
+    width: 47.685185%;
+    position: relative;
+    white-space: normal;
+}
+
+.sonlistname {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sontxt {
+    max-width: 62%;
+    box-sizing: border-box;
+}
+
+.sontxt {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 56%;
+    margin-right: 8px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.artist {
+    width: 22%;
+}
+
+.artist {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+}
+
+.artist {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.album {
+    width: 22%;
+}
+
+.album {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+}
+
+.album {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.time {
+    color: #999;
+}
+
+.time {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    width: 50px;
+}
+
+.time {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.singertime {
+    background-color: transparent;
+    border: none;
+}
+
+td {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.bucss {
+    min-width: 10px;
+    height: 38px;
+    text-align: center;
+    padding-left: 0px;
+    margin-right: 6px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    border: none;
+    color: #333;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+td {
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#tab1 {
+    border: none;
+}
+a{
+    color:aquamarine;
+}
+#sonhand{
+    border:1px solid #c9c9c9;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#sonname{
+    border:1px solid #c9c9c9;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#btn{
+    border:1px solid #c9c9c9;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#btn2{
+    border:1px solid #c9c9c9;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#search1{
+    border:1px solid #c9c9c9;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+a {
+    color: aquamarine;
+}
+
+
+
+ul.list {
+    padding-left: 50px;
+    padding-right: 50px;
+  
+}
+
+li.list_title,
+li.list_music {
+    display: flex;
+    margin-top: 10px;
+}
+li.list_title,
+li.list_music{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.list_title>.list_check,
+.list_music>.list_check {
+    width: 10%;
+}
+
+.list_title>.list_name,
+.list_music>.list_name {
+    width: 45%;
+}
+
+.list_title>.list_singer,
+.list_music>.list_singer {
+    width: 25%;
+}
+.js_sub .p1{
+    color: #000;
+}
+
+.container>.row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(173, 169, 169);
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+
+<body>
+ <!-- 导航 -->
+ <nav class="nav navbar-default ">
+    <div class="container">
+        <div class="header">
+            <a class="navbar-brand" >
+                零度音乐
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">音乐馆</a>
+                </li>
+                <li class="active">
+                    <a href="user.html">我的音乐</a>
+                </li>
+                <li>
+                    <a href="#">客户端</a>
+                </li>
+                <li>
+                    <a href="#">开放平台</a>
+                </li>
+                <li>
+                    <a href="#">VIP</a>
+                </li>
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <input type="text" class="form-control" placeholder="搜索音乐" />
+                </li>
+
+                <li class="drop-menu">
+
+                    <a role="button" class="" id="dropdownMenu1">
+                        <span class="iconfont icon-user"></span>
+                        <span class="user">lff</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="drops">
+                        <li role="button"> <a role="button">我的音乐</a></li>
+                        <li role="button"><a role="button">我的歌单</a></li>
+                        <li class="cancel" role="button"><a>注销</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#footer" class="contact">关于我们</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<!-- 导航 -->
+    <div class="mod_profile">
+        <div class="inner">
+            <h1 class="user">
+                个人信息
+            </h1>
+        </div>
+        <div class="mod-tab">
+            <span class=mod_item>粉丝</span>
+            <span class=mod_item>关注</span>
+        </div>
+    </div>
+    <div class="js_sub" id="like_song_box">
+        <div class="mod_son">
+            <button class="mod_green" onclick="choseAll()">
+                <i class="icon_play"></i>
+                全选
+            </button>
+            <button class="mod_green" onclick="gotoPlay2()">
+                <i class="icon_add"></i>
+                播放
+            </button>
+            <button class="mod_green" onclick="deleteAI()">
+                <i class="icon_down"></i>
+                删除
+            </button>
+        </div>
+    </div>
+
+    <body>
+
+
+    <body>
+        <ul class="list">
+            <li class="list_title">
+                <div class="list_check">
+                </div>
+                <div class="list_name">歌曲</div>
+                <div class="list_singer">歌手</div>
+                <div class="list_time">时长</div>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="infoEmpty"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>下载QQ客户端</h4>
+                    <div class="col-md-3">
+                        <img src="assets/windows.png" class="img-responsive" alt="">
+                        <p class="text-center">PC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/mac (3).png" class="img-responsive" alt="">
+                        <p class="text-center">MAC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/iphone.png" class="img-responsive" alt="">
+                        <p class="text-center">iphone版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/android.png" class="img-responsive" alt="">
+                        <p class="text-center android">安卓版</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">QQ音乐开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐人</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <h4>特色产品 </h4>
+
+                    <div class="col-md-4">
+                        <img src="assets/k-song.png" class="img-responsive" alt="">
+                        <p class="text-center">全名K歌</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/唱吧.png" class="img-responsive" alt="">
+                        <p class="text-center">唱吧</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/music.png" class="img-responsive" alt="">
+                        <p class="text-center">杜比</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">TME集团官网</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐</h4>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <h4>合作链接</h4>
+
+                    <div class="col-md-4">CJ ENM</div>
+                    <div class="col-md-4">腾讯视频</div>
+                    <div class="col-md-4">手机QQ空间</div>
+                    <div class="col-md-4">最新版QQ</div>
+                    <div class="col-md-4">腾讯社交广告</div>
+                    <div class="col-md-4">电脑管家</div>
+                    <div class="col-md-4">QQ浏览器</div>
+                    <div class="col-md-4">腾讯微云</div>
+                    <div class="col-md-4">企鹅FM</div>
+                    <div class="col-md-4">腾讯云</div>
+                    <div class="col-md-4">智能电视网</div>
+                    <div class="col-md-4">当贝市场</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/??jquery/3.4.0/jquery.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/init.js"></script>
+    <script src="JS/tool.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/Setuser.js"></script>
+    <!-- <script src="JS/user.js"></script> -->
+</body>
+
+</html>

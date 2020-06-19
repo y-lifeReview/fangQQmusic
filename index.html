@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零度音乐</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="nav navbar-default ">
+        <div class="container">
+            <div class="header">
+                <a class="navbar-brand" >
+                    零度音乐
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">音乐馆</a>
+                    </li>
+                    <li>
+                        <a href="user.html">我的音乐</a>
+                    </li>
+                    <li>
+                        <a href="">客户端</a>
+                    </li>
+                    <li>
+                        <a href="">开放平台</a>
+                    </li>
+                    <li>
+                        <a href="">VIP</a>
+                    </li>
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <input type="text" class="form-control" placeholder="搜索音乐" />
+                    </li>
+
+                    <li class="drop-menu">
+
+                        <a role="button" class="" id="dropdownMenu1">
+                            <span class="iconfont icon-user"></span>
+                            <span class="user">lff</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="drops">
+                            <li role="button"> <a role="button">我的音乐</a></li>
+                            <li role="button"><a role="button">我的歌单</a></li>
+                            <li class="cancel" role="button"><a>注销</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="footer" class="contact">关于我们</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- 导航 -->
+
+
+    <!-- 歌单推荐 -->
+    <section class="song_tj">
+
+        <div class="title">
+            <h2>歌单推荐</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <nav class="nav">
+                        <div class="navbar-collapse collapse">
+
+
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="">为你推荐</a>
+                                </li>
+                                <li>
+                                    <a href="">网络歌曲</a>
+                                </li>
+                                <li>
+                                    <a href="">情歌</a>
+                                </li>
+                                <li>
+                                    <a href="">经典</a>
+                                </li>
+                                <li>
+                                    <a href="">官方推荐</a>
+                                </li>
+                                <li>
+                                    <a href="">流行歌曲</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <!-- 轮播图 -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="carousel-example-generic" data-slide-to="1"></li>
+
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/300.jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/305.jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/306.jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/307.jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/301 .jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/302.jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/303.jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div class="mod_cover">
+                                        <a href="">
+                                            <img src="assets/306.jpg" class="img-responsive" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <p>快乐驿站：纾解忧郁苦闷的心情</p>
+                                        <span>播放量11.4万</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="carousel-example-generic" data-slide="prev">
+                <i class="iconfont icon-xiaoyuhao" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="carousel-example-generic" role="button" data-slide="next">
+                <i class="iconfont icon-dayuhao" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- 歌单推荐 -->
+
+
+    <!-- 新歌首发 -->
+    <section class="new_song">
+        <div class="title">
+            <h2>新歌首发</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                    <nav class="nav">
+                        <div class="navbar-collapse collapse">
+
+
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="">最新</a>
+                                </li>
+                                <li>
+                                    <a href="">内地</a>
+                                </li>
+                                <li>
+                                    <a href="">港台</a>
+                                </li>
+                                <li>
+                                    <a href="">欧美</a>
+                                </li>
+                                <li>
+                                    <a href="">韩国</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10001" onclick="gotoPlay(event)"
+                                        src="assets/song_1.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="song1" id="10001" onclick="gotoPoint(event)">不坏</a>
+                                <br>
+                                <a class="">熊梓淇</a>
+                            </div>
+                            <p class="pull-right">03:17</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10002" onclick="gotoPlay(event)"
+                                        src="assets/song_2.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="" id="10002" onclick="gotoPoint(event)">如果我不是我</a>
+                                <br>
+                                <a class="" href="">李宇春</a>
+                            </div>
+                            <p class="pull-right">03:27</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object " id="10003" onclick="gotoPlay(event)"
+                                        src="assets/xiang.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="" id="10003" onclick="gotoPoint(event)">像极了</a>
+                                <br>
+                                <a class="" href="">杨胖宇</a>
+                            </div>
+                            <p class="pull-right">00:23</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10004" onclick="gotoPlay(event)"
+                                        src="assets/yanyuan.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="song1" id="10004" onclick="gotoPoint(event)">演员</a>
+                                <br>
+                                <a class="">薛之谦</a>
+                            </div>
+                            <p class="pull-right">04:21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10005" onclick="gotoPlay(event)" src="assets/meiy.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="" id="10005" onclick="gotoPoint(event)">没有意外</a>
+                                <br>
+                                <a class="" href="">蔡徐坤</a>
+                            </div>
+                            <p class="pull-right">05:15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10006" onclick="gotoPlay(event)" src="assets/long.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="" id="10006" onclick="gotoPoint(event)">龙卷风</a>
+                                <br>
+                                <a class="" href="">邓紫棋</a>
+                            </div>
+                            <p class="pull-right">04:08</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10007" onclick="gotoPlay(event)" src="assets/shan.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="song1" id="10007" onclick="gotoPoint(event)">下山</a>
+                                <br>
+                                <a class="">马也</a>
+                            </div>
+                            <p class="pull-right">02:52</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10008" onclick="gotoPlay(event)" src="assets/you.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="" id="10008" onclick="gotoPoint(event)">昨日青空</a>
+                                <br>
+                                <a class="" href="">尤长靖</a>
+                            </div>
+                            <p class="pull-right">04:39</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="mod_cover">
+                                <a href="play.html" target="parent">
+                                    <img class="media-object" id="10009" onclick="gotoPlay(event)" src="assets/wang.jpg"
+                                        alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="pull-left">
+                                <a class="" id="10009" onclick="gotoPoint(event)">风度</a>
+                                <br>
+                                <a class="">汪苏泷</a>
+                            </div>
+                            <p class="pull-right">03:44</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+
+        </div>
+    </section>
+    <!-- 新歌首发 -->
+
+    <!-- 精彩推荐 -->
+    <section class="jctj">
+        <div class="title">
+            <h2>精彩推荐</h2>
+        </div>
+        <!-- 轮播图 -->
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="mycarousel" data-slide-to="1"></li>
+                <li data-target="mycarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/1882770.jpg" class="img-responsive" alt="...">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/1876120.jpg" class="img-responsive" alt="...">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/1880812.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/1880280.jpg" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/1877813.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/1873805.jpg" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="mycarousel" data-slide="prev">
+                <i class="iconfont icon-xiaoyuhao" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="mycarousel" role="button" data-slide="next">
+                <i class="iconfont icon-dayuhao" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- 精彩推荐 -->
+
+    <!-- 排行榜 -->
+    <section class="song_rank">
+        <div class="title">
+            <h2>排行榜</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail bg1">
+                        <div class="caption">
+                            <h4>巅峰榜</h4>
+                            <h2>流行指数</h2>
+                            <p>——</p>
+                            <ol class="navbar-left">
+                                <li>
+                                    桥边姑娘<br>
+                                    海伦</li>
+                                <br>
+                                <li>
+                                    拱手相让<br>
+                                    胜屿</li>
+                                <br>
+                                <li>
+                                    下山<br>
+                                    要不要买菜</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail bg2">
+                        <div class="caption">
+                            <h4>巅峰榜</h4>
+                            <h2>热歌</h2>
+                            <p>——</p>
+                            <ol class="navbar-left">
+                                <li>
+                                    你的答案<br>
+                                    阿冗</li>
+                                <br>
+                                <li>
+                                    像极了<br>
+                                    永彬Ryan.B</li>
+                                <br>
+                                <li>
+                                    Obsession<br>
+                                    Uu</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail bg3">
+                        <div class="caption">
+                            <h4>巅峰榜</h4>
+                            <h2>新歌</h2>
+                            <p>——</p>
+                            <ol class="navbar-left">
+                                <li>
+                                    像极了
+                                    <br>
+                                    永彬Ryan.B
+                                </li>
+                                <br>
+                                <li>
+                                    拱手相让<br>
+                                    胜屿
+                                </li>
+                                <br>
+                                <li>
+                                    余年<br>
+                                    肖战
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail bg4">
+                        <div class="caption">
+                            <h4>巅峰榜</h4>
+                            <h2>欧美</h2>
+                            <p>——</p>
+                            <ol class="navbar-left">
+                                <li>
+                                    桥边姑娘<br>
+                                    海伦</li>
+                                <br>
+                                <li>
+                                    拱手相让<br>
+                                    胜屿</li>
+                                <br>
+                                <li>
+                                    下山<br>
+                                    要不要买菜</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 排行榜 -->
+
+
+
+
+
+
+
+    <!-- 底部联系 -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>下载QQ客户端</h4>
+                    <div class="col-md-3">
+                        <img src="assets/windows.png" class="img-responsive" alt="">
+                        <p class="text-center">PC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/mac (3).png" class="img-responsive" alt="">
+                        <p class="text-center">MAC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/iphone.png" class="img-responsive" alt="">
+                        <p class="text-center">iphone版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/android.png" class="img-responsive" alt="">
+                        <p class="text-center android">安卓版</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">QQ音乐开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐人</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <h4>特色产品 </h4>
+
+                    <div class="col-md-4">
+                        <img src="assets/k-song.png" class="img-responsive" alt="">
+                        <p class="text-center">全名K歌</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/唱吧.png" class="img-responsive" alt="">
+                        <p class="text-center">唱吧</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/music.png" class="img-responsive" alt="">
+                        <p class="text-center">杜比</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">TME集团官网</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐</h4>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <h4>合作链接</h4>
+
+                    <div class="col-md-4">CJ ENM</div>
+                    <div class="col-md-4">腾讯视频</div>
+                    <div class="col-md-4">手机QQ空间</div>
+                    <div class="col-md-4">最新版QQ</div>
+                    <div class="col-md-4">腾讯社交广告</div>
+                    <div class="col-md-4">电脑管家</div>
+                    <div class="col-md-4">QQ浏览器</div>
+                    <div class="col-md-4">腾讯微云</div>
+                    <div class="col-md-4">企鹅FM</div>
+                    <div class="col-md-4">腾讯云</div>
+                    <div class="col-md-4">智能电视网</div>
+                    <div class="col-md-4">当贝市场</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 底部联系 -->
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/??jquery/3.4.0/jquery.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="JS/init.js"></script>
+    <script src="JS/myjQuery.js"></script>
+    <script src="JS/tool.js"></script>
+    <script src="JS/index.js"></script>
+
+</body>
+
+</html>

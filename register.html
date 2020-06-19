@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="nav navbar-default ">
+        <div class="container">
+            <div class="header">
+                <a class="navbar-brand" >
+                    零度音乐
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">音乐馆</a>
+                    </li>
+                    <li>
+                        <a href="#">我的音乐</a>
+                    </li>
+                    <li>
+                        <a href="#">客户端</a>
+                    </li>
+                    <li>
+                        <a href="#">开放平台</a>
+                    </li>
+                    <li>
+                        <a href="#">VIP</a>
+                    </li>
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <input type="text" class="form-control" placeholder="搜索音乐" />
+                    </li>
+
+                    <li>
+
+                        <a role="button" data-toggle="modal" data-target="#myModal">
+                            登录
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#footer">关于我们</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- 导航 -->
+
+    <section class="nlogin">
+
+        <div class="container">
+            <div class="row wow zoomIn" data-wow-duration="1.5s">
+                <div class="col-12">
+                    <h2 class="text-center">私人音乐空间，听我喜欢听的歌</h2>
+                </div>
+                <div class="col-md-12">
+                    <p class="text-center">登录管理我的音乐，多终端同步</p>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-lg" data-toggle="modal" data-target="#myModal">立即登录</button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">用户登录</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">手机号码/昵称</label>
+                            <input type="text" class="form-control" id="name" placeholder="手机号码或QQ账号">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">密码</label>
+                            <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                        </div>
+                      <p class="pull-right">用户名/密码错误</p>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default regbtn">立即登录</button>
+                    <a role="button" href="login.html" target="blank" class="btn btn-primary">注册新账号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框 -->
+
+    <!-- 底部联系 -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>下载QQ客户端</h4>
+                    <div class="col-md-3">
+                        <img src="assets/windows.png" class="img-responsive" alt="">
+                        <p class="text-center">PC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/mac (3).png" class="img-responsive" alt="">
+                        <p class="text-center">MAC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/iphone.png" class="img-responsive" alt="">
+                        <p class="text-center">iphone版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/android.png" class="img-responsive" alt="">
+                        <p class="text-center android">安卓版</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">QQ音乐开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐人</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <h4>特色产品 </h4>
+
+                    <div class="col-md-4">
+                        <img src="assets/k-song.png" class="img-responsive" alt="">
+                        <p class="text-center">全名K歌</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/唱吧.png" class="img-responsive" alt="">
+                        <p class="text-center">唱吧</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/music.png" class="img-responsive" alt="">
+                        <p class="text-center">杜比</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">TME集团官网</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐</h4>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <h4>合作链接</h4>
+
+                    <div class="col-md-4">CJ ENM</div>
+                    <div class="col-md-4">腾讯视频</div>
+                    <div class="col-md-4">手机QQ空间</div>
+                    <div class="col-md-4">最新版QQ</div>
+                    <div class="col-md-4">腾讯社交广告</div>
+                    <div class="col-md-4">电脑管家</div>
+                    <div class="col-md-4">QQ浏览器</div>
+                    <div class="col-md-4">腾讯微云</div>
+                    <div class="col-md-4">企鹅FM</div>
+                    <div class="col-md-4">腾讯云</div>
+                    <div class="col-md-4">智能电视网</div>
+                    <div class="col-md-4">当贝市场</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 底部联系 -->
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/??jquery/3.4.0/jquery.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="JS/myjQuery.js"></script>
+    <script src="JS/tool.js"></script>
+    <script src="JS/register.js"></script>
+</body>
+
+</html>

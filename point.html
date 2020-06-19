@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>评论栏</title>
+    <link rel="stylesheet" type="text/css" href="fonts/point_fonts/iconfont.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/point.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://s0.pstatp.com/cdn/expire-1-M/toastr.js/2.1.4/toastr.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <!-- 导航 -->
+   <nav class="nav navbar-default ">
+    <div class="container">
+        <div class="header">
+            <a class="navbar-brand" >
+                零度音乐
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="index.html">音乐馆</a>
+                </li>
+                <li>
+                    <a href="user.html">我的音乐</a>
+                </li>
+                <li>
+                    <a href="#">客户端</a>
+                </li>
+                <li>
+                    <a href="#">开放平台</a>
+                </li>
+                <li>
+                    <a href="#">VIP</a>
+                </li>
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <input type="text" class="form-control" placeholder="搜索音乐" />
+                </li>
+
+                <li class="drop-menu">
+
+                    <a role="button" class="" id="dropdownMenu1">
+                        <span class="iconfont icon-user"></span>
+                        <span class="user">lff</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="drops">
+                        <li role="button"> <a role="button">我的音乐</a></li>
+                        <li role="button"><a role="button">我的歌单</a></li>
+                        <li class="cancel" role="button"><a>注销</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#footer" class="contact">关于我们</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<!-- 导航 -->
+
+    <div id="container">
+        <div id="main">
+
+            <!-- 歌曲信息 -->
+            <div id="leader">
+                <img src="assets/1.jpg" alt="" id="songPic">
+                <div id="songMsg">
+                    <div id="songName">
+                        <h1 id="songName_txt">二十一世纪，当我们还年轻时 (Live)</h1>
+                    </div>
+                    <div id="songSinger"><span><a href="" id="songSing_text">刺猬乐队</a></span></div>
+                    <ul id="songInfo">
+                        <li id="songInfo_1">
+                            专辑：<a href="">乐队的夏天 第12期</a>
+                        </li>
+                        <li id="songInfo_2">
+                            语种：<a href="">国语</a>
+                        </li>
+                        <li id="songInfo_3">
+                            流派：<a href="">流行</a>
+                        </li>
+                        <li id="songInfo_4">
+                            唱片公司：<a href="">爱奇艺</a>
+                        </li>
+                        <li id="songInfo_5">
+                            发行时间：2019-08-10
+                        </li>
+                    </ul>
+                    <div id="songFun" role="toolbar">
+                        <a id="songPlay" onclick="gotoPlay1()"><i class="iconfont">&#xe769;</i> 播放</a>
+                        <a href="" id="songCollect"><i class="iconfont">&#xe657;</i> 收藏</a>
+                        <a href="#point" id="songPoint"> <i class="iconfont">&#xe635;</i> 评论</a>
+                        <a href="javascript:void(0);" id="songMore"><i class="iconfont">&#xe738;</i> 更多</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div id="infoMore">
+                <ul class="moreMenu">
+                    <li id="addMusic"><a class="addList">
+                            <i class="iconfont addList1">&#xe64b;</i>添加到歌单
+                            <i class="iconfont addList2">&#xe658;</i>
+                        </a>
+                    </li>
+                    <li><a href="#" class="shareList">
+                            <i class="iconfont shareList1">&#xe605;</i> 分享
+                            <i class="iconfont shareList2">&#xe658;</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="downLoad">
+                            <i class="iconfont downLoad1">&#xe723;</i> 下载
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tipList">
+                            <i class="iconfont tipList1">&#xe652;</i> 举报
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- 主体-->
+            <div id="both">
+                <!-- 左边部分歌词评论 -->
+                <div id="both_left">
+                    <!-- 歌词部分 -->
+                    <div id="lyric_area">
+                        <ul id="lyrics"></ul>
+                    </div>
+                    <a href="javascript:showdiv();" id="lyrics_more">[展开]</a>
+
+                    <!-- 评论部分 -->
+                    <div id="point">
+                        <div id="point_hd">
+                            <h2 id="point_tit">评论
+                                <span id="point_tit_txt">共<span id="sumNum"> </span>条评论</span>
+                            </h2>
+                        </div>
+                        <div id="point_mod">
+                            <div id="point_input">
+                                <textarea id="myInput" onkeyup="checkWords(this);" onmousedown="checkWords(this);"
+                                    placeholder="期待你的神评论......"></textarea>
+                            </div>
+                            <div id="leftPoint">
+                                <div id="point_left">
+                                    <span>剩余<span id="textNum">300</span>字</span>
+                                </div>
+                                <div> <button id="doPost">发表评论</button> </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 评论显示 -->
+                    <div id="goodVeiw">
+                        <div id="Vew_tit">
+                            <span>精彩评论(4)</span>
+                        </div>
+
+                        <ul id="goodVeiw_list">
+                            <li id="goodV_list" class="goodV_list">
+
+                                <a href="" id="userPic"><img src="assets/2.jpg" alt="111" width="50px"
+                                        height="50px"></a>
+
+                                <h4 id="userName">
+                                    <a id="Name_text" href="">用户名</a>
+                                </h4>
+                                <p id="View_txt" class="View_txt">
+                                    "谢谢小乐比子健不洗澡还臭的臭脸和骚胯，最后一场终于看到有点阳光的笑脸，年轻人狂但别端着可以让你们走的更远；谢谢所有我喜欢的不喜欢的乐队，只要你们坚守自己的理想，上帝必将恩赐勇武之人；谢谢专业乐迷，这么多年你们像中国摇滚一样孤独潦倒，却还心怀暖阳的守望，你们的道义值得所有乐队尊敬；谢谢大张伟，我再也不故意念错你的名字为张大伟，再也不说高中同学的大学同学打过你，因为我发现你才是这个舞台上最理解并希望他们好的人；谢谢马东，是你拆掉了的摇滚和穷苦之间的等号，让认真做音乐的人得以体面的生存；谢谢推荐乐夏并送我刺猬CD的小姑娘，你比梦姐还美；谢谢你，《乐队的夏天》！"
+                                </p>
+                                <div id="view_last">
+                                    <span id="view_time">8月11日 03:37</span>
+                                    <a href="javascript:void(0);" id="likes" class="likes"><i
+                                            class="iconfont">&#xe680;</i> <span id="like-1"
+                                            class="like-1">432</span></a>
+                                    <a href="javascript:void(0);" id="discuss" class="discuss"><i
+                                            class="iconfont">&#xe635;</i> 回复</a>
+                                </div>
+                            </li>
+
+                            <li id="goodV_list" class="goodV_list">
+
+                                <a href="" id="userPic"><img src="assets/2.jpg" alt="111" width="50px"
+                                        height="50px"></a>
+
+                                <h4 id="userName">
+                                    <a id="Name_text" href="">用户名</a>
+                                </h4>
+                                <p id="View_txt" class="View_txt">
+                                    "谢谢小乐比子健不洗澡还臭的臭脸和骚胯，最后一场终于看到有点阳光的笑脸，年轻人狂但别端着可以让你们走的更远；谢谢所有我喜欢的不喜欢的乐队，只要你们坚守自己的理想，上帝必将恩赐勇武之人；谢谢专业乐迷，这么多年你们像中国摇滚一样孤独潦倒，却还心怀暖阳的守望，你们的道义值得所有乐队尊敬；谢谢大张伟，我再也不故意念错你的名字为张大伟，再也不说高中同学的大学同学打过你，因为我发现你才是这个舞台上最理解并希望他们好的人；谢谢马东，是你拆掉了的摇滚和穷苦之间的等号，让认真做音乐的人得以体面的生存；谢谢推荐乐夏并送我刺猬CD的小姑娘，你比梦姐还美；谢谢你，《乐队的夏天》！"
+                                </p>
+                                <div id="view_last">
+                                    <span id="view_time">8月11日 03:37</span>
+                                    <a href="javascript:void(0);" id="likes" class="likes"><i
+                                            class="iconfont">&#xe680;</i> <span id="like-2"
+                                            class="like-1">333</span></a>
+                                    <a href="javascript:void(0)" id="discuss" class="discuss"><i
+                                            class="iconfont">&#xe635;</i> 回复</a>
+                                </div>
+                            </li>
+
+                            <li id="goodV_list" class="goodV_list">
+
+                                <a href="" id="userPic"><img src="assets/2.jpg" alt="111" width="50px"
+                                        height="50px"></a>
+
+                                <h4 id="userName">
+                                    <a id="Name_text" href="">用户名</a>
+                                </h4>
+                                <p id="View_txt" class="View_txt">
+                                    "谢谢小乐比子健不洗澡还臭的臭脸和骚胯，最后一场终于看到有点阳光的笑脸，年轻人狂但别端着可以让你们走的更远；谢谢所有我喜欢的不喜欢的乐队，只要你们坚守自己的理想，上帝必将恩赐勇武之人；谢谢专业乐迷，这么多年你们像中国摇滚一样孤独潦倒，却还心怀暖阳的守望，你们的道义值得所有乐队尊敬；谢谢大张伟，我再也不故意念错你的名字为张大伟，再也不说高中同学的大学同学打过你，因为我发现你才是这个舞台上最理解并希望他们好的人；谢谢马东，是你拆掉了的摇滚和穷苦之间的等号，让认真做音乐的人得以体面的生存；谢谢推荐乐夏并送我刺猬CD的小姑娘，你比梦姐还美；谢谢你，《乐队的夏天》！"
+                                </p>
+                                <div id="view_last">
+                                    <span id="view_time">8月11日 03:37</span>
+                                    <a href="javascript:void(0);" id="likes" class="likes"><i
+                                            class="iconfont">&#xe680;</i> <span id="like-3"
+                                            class="like-1">233</span></a>
+                                    <a href="javascript:void(0)" id="discuss" class="discuss"><i
+                                            class="iconfont">&#xe635;</i> 回复</a>
+                                </div>
+                            </li>
+
+                            <li id="goodV_list" class="goodV_list">
+
+                                <a href="" id="userPic"><img src="assets/2.jpg" alt="111" width="50px"
+                                        height="50px"></a>
+
+                                <h4 id="userName">
+                                    <a id="Name_text" href="">用户名</a>
+                                </h4>
+                                <p id="View_txt" class="View_txt">
+                                    "谢谢小乐比子健不洗澡还臭的臭脸和骚胯，最后一场终于看到有点阳光的笑脸，年轻人狂但别端着可以让你们走的更远；谢谢所有我喜欢的不喜欢的乐队，只要你们坚守自己的理想，上帝必将恩赐勇武之人；谢谢专业乐迷，这么多年你们像中国摇滚一样孤独潦倒，却还心怀暖阳的守望，你们的道义值得所有乐队尊敬；谢谢大张伟，我再也不故意念错你的名字为张大伟，再也不说高中同学的大学同学打过你，因为我发现你才是这个舞台上最理解并希望他们好的人；谢谢马东，是你拆掉了的摇滚和穷苦之间的等号，让认真做音乐的人得以体面的生存；谢谢推荐乐夏并送我刺猬CD的小姑娘，你比梦姐还美；谢谢你，《乐队的夏天》！"
+                                </p>
+                                <div id="view_last">
+                                    <span id="view_time">8月11日 03:37</span>
+                                    <a href="javascript:void(0);" id="likes" class="likes"><i
+                                            class="iconfont">&#xe680;</i> <span id="like-4"
+                                            class="like-1">563</span></a>
+                                    <a href="javascript:void(0)" id="discuss" class="discuss"><i
+                                            class="iconfont">&#xe635;</i> 回复</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="overVeiw">
+                            <span>精彩评论已加载完毕</span>
+                        </div>
+                    </div>
+
+
+                    <div id="newVeiw">
+                        <div id="Vew_tit">
+                            最新评论(<span id="newNum" class="newNum"> </span>)
+                        </div>
+
+                        <ul id="newVeiw_list">
+
+                            <li id="newV_list" class="newV_list">
+
+                                <a href="" id="userPic"><img src="assets/2.jpg" alt="111" width="50px"
+                                        height="50px"></a>
+
+                                <h4 id="userName">
+                                    <a id="Name_text" href="">用户名</a>
+                                </h4>
+                                <p id="View_txt" class="View_txt">
+                                    "谢谢小乐比子健不洗澡还臭的臭脸和骚胯，最后一场终于看到有点阳光的笑脸，年轻人狂但别端着可以让你们走的更远；谢谢所有我喜欢的不喜欢的乐队，只要你们坚守自己的理想，上帝必将恩赐勇武之人；谢谢专业乐迷，这么多年你们像中国摇滚一样孤独潦倒，却还心怀暖阳的守望，你们的道义值得所有乐队尊敬；谢谢大张伟，我再也不故意念错你的名字为张大伟，再也不说高中同学的大学同学打过你，因为我发现你才是这个舞台上最理解并希望他们好的人；谢谢马东，是你拆掉了的摇滚和穷苦之间的等号，让认真做音乐的人得以体面的生存；谢谢推荐乐夏并送我刺猬CD的小姑娘，你比梦姐还美；谢谢你，《乐队的夏天》！"
+                                </p>
+                                <div id="view_last">
+                                    <span id="view_time">8月11日 03:37</span>
+                                    <a href="javascript:void(0);" id="likes" class="likes"><i
+                                            class="iconfont">&#xe680;</i> <span id="like_new">233</span></a>
+                                    <a href="javascript:void(0);" id="discuss" class="discuss"><i
+                                            class="iconfont">&#xe635;</i> 回复</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>下载QQ客户端</h4>
+                    <div class="col-md-3">
+                        <img src="assets/windows.png" class="img-responsive" alt="">
+                        <p class="text-center">PC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/mac (3).png" class="img-responsive" alt="">
+                        <p class="text-center">MAC版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/iphone.png" class="img-responsive" alt="">
+                        <p class="text-center">iphone版</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/android.png" class="img-responsive" alt="">
+                        <p class="text-center android">安卓版</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">QQ音乐开放平台</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐人</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <h4>特色产品 </h4>
+
+                    <div class="col-md-4">
+                        <img src="assets/k-song.png" class="img-responsive" alt="">
+                        <p class="text-center">全名K歌</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/唱吧.png" class="img-responsive" alt="">
+                        <p class="text-center">唱吧</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/music.png" class="img-responsive" alt="">
+                        <p class="text-center">杜比</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-left">TME集团官网</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-left">腾讯音乐</h4>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <h4>合作链接</h4>
+
+                    <div class="col-md-4">CJ ENM</div>
+                    <div class="col-md-4">腾讯视频</div>
+                    <div class="col-md-4">手机QQ空间</div>
+                    <div class="col-md-4">最新版QQ</div>
+                    <div class="col-md-4">腾讯社交广告</div>
+                    <div class="col-md-4">电脑管家</div>
+                    <div class="col-md-4">QQ浏览器</div>
+                    <div class="col-md-4">腾讯微云</div>
+                    <div class="col-md-4">企鹅FM</div>
+                    <div class="col-md-4">腾讯云</div>
+                    <div class="col-md-4">智能电视网</div>
+                    <div class="col-md-4">当贝市场</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/??jquery/3.4.0/jquery.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/toastr.js/2.1.4/toastr.min.js" type="application/javascript"></script>
+    <script src="JS/init.js"></script>
+    <script src="JS/tool.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/Setpoint.js"></script>
+    <script src="JS/add_point.js"></script>
+
+</body>
+
+</html>

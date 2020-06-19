@@ -1,0 +1,51 @@
+.row .col-md-5 {
+    background: url("../assets/01-1.jpg") no-repeat;
+    height: 900px;
+    background-attachment: fixed;
+}
+
+.row .col-md-6 {
+    margin-top: 100px;
+}
+
+.row .form-control {
+    height: 50px;
+}
+
+
+.row .form-group {
+    border-radius: 0;
+    margin-bottom: 20px;
+
+}
+
+.row button {
+    width: 340px;
+    background: #2F7BEB;
+    color: #fff;
+    /* margin-top: 15px; */
+    margin-bottom: 20px;
+}
+.btn:focus,
+.btn:hover {
+    color: #fff;
+    background: rgb(42, 109, 209);
+}
+
+
+.row .p1,
+.row .p2 ,
+.row .p11,
+.row .p22,
+.row .p23
+{
+    color: rgb(253, 6, 6);
+    display: none;
+}
+.row .p3{
+
+    margin-top: -8px;
+    color: rgb(253, 6, 6);
+    display: none;
+}
+

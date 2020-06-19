@@ -1,0 +1,387 @@
+/* 导航 */
+nav.nav.navbar-default {
+    background: none;
+    height: 90px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-default .navbar-brand {
+    margin-top: 20px;
+    color: #31C27C;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: rgb(47, 177, 114);
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    height: 90px;
+    line-height: 3;
+    font-size: 18px;
+    font-family: poppin, Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+}
+
+.navbar-default .navbar-nav>li>input {
+    margin-top: 24px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+
+    background-color: #31C27C;
+    color: #fff;
+}
+
+a#dropdownMenu1 {
+    background: none;
+    border: none;
+}
+
+img#qq_logo {
+   /*  height: 64px;
+    width: 85px; */
+}
+
+.navbar-right .dropdown-menu {
+    right: -100px;
+    left: auto;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #31C27C;
+
+}
+
+.navbar-default .navbar-right {
+    position: relative;
+    right: 20px;
+}
+
+
+
+/* 歌单推荐 新歌首发  排行榜*/
+
+.song_tj,
+.new_song,
+.song_rank,
+.jctj {
+    text-align: center;
+    font-weight: bold;
+    font-family: Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif/9;
+    background: #FAFAFA;
+}
+
+.jctj {
+    height: 350px;
+}
+
+.song_tj .title,
+.new_song .title,
+.song_rank .title {
+    background: #eee;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jctj .title {
+    background: #eee;
+    padding-top: 20px;
+}
+
+.song_tj .title h2,
+.new_song .title h2,
+.song_rank .title h2,
+.jctj .title h2 {
+    letter-spacing: 7px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.new_song .container img {
+    width: 90px;
+    height: 90px;
+}
+
+.song_tj .container>.row>.col-md-6 a,
+.new_song .container>.row>.col-md-4 a {
+    color: #000;
+    font-family: poppin, Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.song_tj .container>.row .navbar-nav>.active>a,
+.song_tj .container>.row .navbar-nav>.active>a:hover,
+.new_song .container>.row .navbar-nav>.active>a,
+.new_song .container>.row .navbar-nav>.active>a:hover {
+
+    color: #31C27C;
+}
+
+.song_tj .container>.row>.col-md-6 a:hover,
+.new_song .container>.row>.col-md-4 a:hover {
+    color: #31C27C;
+    background: none;
+
+}
+
+.song_tj .container>.row>.col-md-3>.thumbnail {
+    border: none;
+    background: none;
+}
+
+
+.new_song .container>.row>.col-md-4>.media {
+    border-bottom: 1px solid #eee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.song_rank .container>.row>.col-md-3>.thumbnail {
+    border: none;
+    width: 224px;
+    height: 500px;
+    margin-top: 20px;
+
+}
+
+.new_song a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mod_cover {
+    background: rgba(0, 0, 0)
+}
+
+.mod_cover img {
+    opacity: 0.85;
+    filter: alpha(opacity=60);
+    transition: all 0.6s;
+}
+
+.song_tj .mod_cover:hover {
+    background: rgba(0, 0, 0) url("../assets/bofang5.png") no-repeat center center;
+    transform: scale(1.05);
+    background-size: 50px;
+}
+
+.new_song .mod_cover:hover {
+    background: rgba(0, 0, 0) url("../assets/bofang5.png") no-repeat center center;
+    transform: scale(1.05);
+    background-size: 30px;
+}
+
+.song_rank .container>.row>.col-md-3>.bg1 {
+    background: url("../assets/bg_index_top1.png");
+}
+
+.song_rank .container>.row>.col-md-3>.bg2 {
+    background: url("../assets/bg_index_top2.png");
+}
+
+.song_rank .container>.row>.col-md-3>.bg3 {
+    background: url("../assets/bg_index_top3.png");
+}
+
+.song_rank .container>.row>.col-md-3>.bg4 {
+    background: url("../assets/bg_index_top4.png");
+}
+
+.song_rank .caption {
+    margin-top: 30px;
+    color: #FAFAFA;
+    font-family: Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif/9;
+
+}
+
+.song_rank .caption h2 {
+    padding-bottom: 25px;
+}
+
+.song_rank .caption ol {
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+/* 底部 */
+
+
+.footer {
+    height: 500px;
+    background: #333333;
+}
+
+.footer .container>.row {
+    padding-top: 100px;
+
+}
+
+.footer .container>.row>.col-md-4 {
+    color: rgb(191, 184, 184);
+}
+
+.footer .container>.row>.col-md-4>.col-md-3,
+.footer .container>.row>.col-md-4>.col-md-4 {
+    margin-top: 30px;
+}
+
+.footer .container>.row>.col-md-4>.col-md-3>img {
+    margin-bottom: 8px;
+}
+
+.footer .container>.row>.col-md-4>.col-md-4>img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer .container>.row .android {
+    padding-top: 3px;
+}
+
+.footer .container>.row>.col-md-4>h4 {
+    padding-left: 15px;
+}
+
+.footer .container>.row>.col-md-4>.col-md-12 {
+    margin: 30px 0;
+}
+
+
+/* 轮播 */
+
+.song_tj .carousel-control {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 8%;
+    height: 25%;
+    line-height: 4;
+    color: #000;
+}
+
+.carousel-control:focus,
+.carousel-control:hover {
+    color: #000;
+}
+
+.song_tj .carousel-indicators {
+    margin-bottom: -23px;
+}
+
+.carousel-indicators li {
+    background: #eee;
+
+}
+
+.carousel-indicators .active {
+
+    background-color: rgb(219, 218, 218);
+}
+
+.jctj .carousel-control {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 8%;
+    height: 40%;
+    line-height: 4;
+    color: #000;
+}
+
+.jctj .carousel-indicators {
+    margin-bottom: -60px;
+}
+
+
+.nlogin {
+    background: url("../assets/bg_profile_unlogin.jpg") no-repeat;
+    height: 600px;
+}
+
+.nlogin>.container>.row {
+    margin-top: 150px;
+    color: #fff;
+}
+
+.nlogin>.container h2 {
+    font-family: Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif/9;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.nlogin>.container p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.nlogin>.container button {
+    background: #31C27C;
+    border-radius: 0;
+}
+
+.nlogin>.container button:hover,
+.nlogin>.container button:focus {
+    color: #fff;
+}
+
+
+.icon-user {
+    font-size: 18px;
+}
+
+.drops {
+    display: none;
+    position: absolute;
+    top: 88px;
+    right: -78px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    border-radius: 4px;
+    font-size: 14px;
+    list-style: none;
+    padding: 5px;
+    width: 150px;
+
+}
+
+.drops li {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.drops li a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.drops li:hover {
+    background: #eee;
+}
+
+.modal {
+    margin-top: 100px;
+}
+
+.modal .modal-content {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.modal .modal-body p {
+    margin-top: -6px;
+    color: red;
+    display: none;
+}
+
+
+.audio {
+    background: url("../assets/bofang.png") no-repeat center center;
+    background-color: #BFBFBF;
+}

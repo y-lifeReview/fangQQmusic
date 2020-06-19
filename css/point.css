@@ -1,0 +1,504 @@
+html,
+body {
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: poppin, Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+#container {
+    /* width: 100%; */
+    background-image: linear-gradient(rgb(248, 248, 248),white);
+}
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+     
+}
+
+#leader {
+    height: 300px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    
+
+}
+
+#songPic {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+#songMsg {
+    
+    width: 895px;
+    height: 250px;
+    /* padding-top: 13px; */
+    padding-left: 305px;
+    /* margin-top: 40px;
+    margin-bottom: 35px; */
+}
+
+#songName {
+    
+    overflow: hidden;
+    /* height: 50px; */
+    line-height: 50px;
+}
+
+#songName_txt {
+    margin-top: 10px;
+    float: left;
+    font-size: 31px;
+    line-height: 50px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    margin-right: 10px;
+}
+
+#songSinger {
+    
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+#songSing_text {
+    font-size: 16px;
+
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #31c27c;
+    text-decoration: none;
+}
+
+#songInfo {
+    height: 87.2px;
+    width: 450px;
+    overflow: hidden;
+    padding-top: 8px;
+    
+}
+
+ul {
+    display: block;
+
+}
+
+li {
+    list-style: none;
+    
+}
+
+#songInfo_1,
+#songInfo_3,
+#songInfo_5 {
+    width: 250px;
+    float: left;
+    line-height: 27px;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+#songInfo_2,
+#songInfo_4 {
+    width: 166px;
+    float: left;
+    line-height: 27px;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+#songFun {
+    margin-top: 10px;
+    height: 38px;
+    width: 512px;
+    position: absolute;
+    /* bottom: 23px; */
+    font-size: 0;
+    cursor: pointer;
+}
+
+#songPlay {
+    min-width: 122px;
+    height: 38px;
+    text-align: center;
+    padding: 0 18px;
+    margin-right: 6px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#songCollect,
+#songPoint,
+#songMore {
+    min-width: 122px;
+    height: 38px;
+    text-align: center;
+    padding: 0 18px;
+    margin-right: 6px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    border: 1px solid #c9c9c9;
+    color: #333;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#both{
+    width: 100%;
+}
+#both_left {
+    width: 70%;
+    min-width: 600px;
+    
+}
+
+#both_right{
+    width: 29%;
+    float: left;
+    background: #31c27c;
+    height: 100%;
+}
+
+#lyrcs {
+    
+    height: 462px;
+}
+
+#lyrics_name {
+    
+    overflow: hidden;
+    line-height: 46px;
+}
+
+#lyrics_tit {
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+#copyLyrics {
+    border: none;
+    background: none;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-position: -100px -40px;
+    margin-top: 10px;
+    text-decoration: none;
+    /* overflow: hidden; */
+}
+
+#lyrics_cont {
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+#lyrics_box {
+    height: auto;
+}
+
+#lyrics_more,#relyUser{
+    color: #31c27c;
+}
+
+#point_hd {
+    height: 60px;
+    
+}
+
+#point_tit {
+    height: 61px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#point_tit_txt {
+    font-size: 14px;
+    color: #999;
+    margin-left: 12px;
+}
+
+#point_mod,.reply_textarea{
+    height: 164px;
+}
+
+#myInput,.relyInput{
+    width: 100%;
+    height: 102px;
+    background: rgb(238, 237, 237);
+    border: rgb(238, 237, 237) 1px solid;
+}
+
+#leftPoint {
+    width: 165px;
+    height: 34px;
+    position: absolute;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#point_left {
+    width: 72px;
+    height: 27px;
+    color: #999;
+    float: left;
+}
+
+#textNum {
+    color: #31c27c;
+}
+
+#doPost,.doRely{
+    min-width: 78px;
+    height: 25px;
+    text-align: center;
+    margin-left: 15px;
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.doCancel{
+    min-width: 78px;
+    height: 25px;
+    text-align: center;
+    margin-left: 15px;
+    background: #fff;
+    border: 1px solid  #999;
+    border-radius: 2px;
+
+}
+
+#Vew_tit {
+    font-size: 16px;
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #ededed;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#goodVeiw_list ,#newVeiw_list{
+    padding-bottom: 14px;
+    
+}
+
+#goodV_list,#newV_list{
+    position: relative;
+    padding: 18px 0 18px 80px;
+    zoom: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #ededed;
+}
+
+#userPic{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+#userName{
+    font-weight: 400;
+    margin-bottom: 6px;
+    overflow: hidden;
+    height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+#Name_text{
+    color: #999;
+}
+
+#Name_text:hover{
+    color: #31c27c;
+}
+
+#View_txt{
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: justify;
+    margin: 5px 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#view_last{
+    line-height: 24px;
+    text-align: right;
+    overflow: hidden;
+    
+}
+
+#view_time{
+    float: left;
+    line-height: 28px;
+    color: #999;
+}
+
+#likes{
+    font-size: 16px;
+    margin-right: 20px;
+    vertical-align: -1px
+}
+
+#discuss{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+
+#overVeiw{
+    padding-top: 3px;
+    text-align: center;
+}
+
+#hidText{
+    position: absolute;
+    top: 0;left: 0;
+    opacity: 0;
+    z-index: -10;
+}
+
+#infoMore{
+
+    width: 168px;
+    padding: 5px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(183,183,183,.65);
+    border: 1px solid #bfbfbf;
+}
+
+.moreMenu{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.addList:hover,.shareList:hover,.downLoad:hover,.tipList:hover{
+    color: #fff;
+}
+
+.moreMenu>li:hover{
+    background-color: #31c27c;
+}
+
+
+#infoMore{
+    display: none;
+    position: absolute;
+    left: 900px;
+    top:370px;
+}
+
+.addList,.shareList,.downLoad,.tipList{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-bottom: 1px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.addList1,.shareList1,.downLoad1,.tipList1{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 15px;
+}
+
+.addList2,.shareList2{
+    position: absolute;
+    width: 6px;
+    height: 11px;
+    left: auto;
+    right: 15px;
+}
+
+
+#lyric_area {
+    height: 300px;
+    overflow: hidden;
+}
+#lyric_area ul li{
+    font-size: 14px;
+}
+div#toast-container {
+    margin-top: 200px;
+    /* margin-left: 38px; */
+    width: 97px;
+    padding-right: -20px;
+    margin-right: 200px;
+}
